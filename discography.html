@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discography - Dom Tristram</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/discography.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="discography.html">Discography</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="discography-grid">
+            <!-- Albums will be dynamically loaded here by JavaScript -->
+        </section>
+    </main>
+
+<!-- Pop-up Modal for album details -->
+<div id="album-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="album-cover" src="" alt="Album Cover">
+        <h2 id="album-title"></h2>
+        <p id="album-artist"></p>
+        <p id="album-description"></p>
+        <p><strong>Release Date:</strong> <span id="album-release-date"></span></p>
+        <label for="album-streaming">Listen or Buy:</label>
+        <select id="album-streaming" onchange="openStreamingLink(this)">
+            <option value="">Select an option...</option>
+        </select>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Dom Tristram. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
