@@ -226,17 +226,18 @@ footer {
 
 .hero-text p {
     margin: 0.5rem 0;
-    word-wrap: break-word; /* Ensure words break properly */
-    overflow-wrap: break-word;
-    hyphens: auto; /* Enable hyphenation for better text wrapping */
+    word-wrap: normal; /* Changed from break-word */
+    overflow-wrap: normal; /* Changed from break-word */
+    hyphens: none; /* Disable hyphenation */
+    white-space: normal;
 }
 
 .hero-link {
     color: #ffcc00;
     text-decoration: none;
     transition: color 0.2s ease;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    word-wrap: normal;
+    overflow-wrap: normal;
 }
 
 .hero-link:hover {
