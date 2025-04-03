@@ -223,8 +223,27 @@ footer {
     position: relative;
     z-index: 1;
     text-align: center;
-    max-width: 800px; /* Added max-width for better text containment */
-    padding: 1rem; /* Reduced padding */
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.hero-text {
+    max-width: 600px; /* This ensures text doesn't get wider than the heading */
+    margin: 0 auto;
+}
+
+.hero-text p {
+    margin: 0.5rem 0;
+}
+
+.hero-link {
+    color: #ffcc00; /* Same yellow as other links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.hero-link:hover {
+    color: #ff6600; /* Same hover color as other links */
 }
 
 /* Updated typography for hero section */
