@@ -145,3 +145,128 @@ footer {
     color: #ffcc00;
     margin-bottom: 10px;
 }
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(44, 44, 84, 0.9), rgba(74, 78, 105, 0.9));
+    margin-top: -20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 20%, #2c2c54 80%);
+    animation: pulse 8s infinite;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animated Title */
+.animated-title {
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Typing Effect */
+.typing-effect {
+    border-right: 3px solid #ffcc00;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Latest Release Section */
+.latest-release {
+    padding: 40px 20px;
+}
+
+.release-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.release-card:hover {
+    transform: translateY(-5px);
+}
+
+/* News Feed */
+.news-feed {
+    padding: 40px 20px;
+}
+
+.substack-preview {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffcc00 }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.5; }
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#album-type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: rgba(255, 204, 0, 0.2);
+    color: #ffcc00;
+    margin-left: 5px;
+}

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/all_is_calm.png",
             description: "With everything currently going on close to the setting of the original Christmas story I thought I'd write something about another scared young mother trying to find somewhere to have her baby.",
             releaseDate: "1st December 2024",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/album/41pzkSgn664xFkWb8iqQKe?si=jIyvOBBhTD6tiNbmqBYFVA",
                 AppleMusic: "https://music.apple.com/gb/album/all-is-calm/1733135769?i=1733135771",
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/wildwomen.png",
             description: "A collection of tracks exploring themes of independence and strength.",
             releaseDate: "31st October 2024",
+            releaseType: "EP",
             links: {
                 Spotify: "https://open.spotify.com/album/13Zwf0wJTFqEAD3F8kBJmA?si=Grwptda2THOkLTEWVqVA9w",
                 AppleMusic: "https://music.apple.com/gb/album/wild-women-ep/1775749944",
@@ -27,12 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             title: "Time Runs Backwards",
             artist: "The Goodness Guild",
-            cover: "images/discography/time_runs_backwards.png",
+            cover: "images/discography/timerunsbackwards.png",
             description: "The super-wealthy have asset-stripped the country. Vote them out",
             releaseDate: "15th March 2024",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/0VVvTV7FqKMLgyS7YuX1aL",
-                AppleMusic: "hhttps://music.apple.com/gb/album/time-runs-backwards/1732738316",
+                AppleMusic: "https://music.apple.com/gb/album/time-runs-backwards/1732738316",
                 Bandcamp: "https://goodnessguild.bandcamp.com/track/time-runs-backwards-2"
             }
         },
@@ -42,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/electricity.png",
             description: "A song about love over distance",
             releaseDate: "1st February 2024",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/4hnJgIg3cBSqNZCmKT8r3L",
                 AppleMusic: "https://music.apple.com/gb/album/electricity-single/1726056868"
@@ -53,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/thebestadvice.png",
             description: "An upbeat song about deciding to make a change to the world.",
             releaseDate: "1st February 2024",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/6KRa8AfEEkf5zH6ELD207q",
                 AppleMusic: "https://music.apple.com/gb/album/the-best-advice-ever-given-to-me-single/1719874906",
@@ -65,9 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/photograph.png",
             description: "A song about remembering a person of whom the physical evidence of existence is being slowly but inevitably lost.",
             releaseDate: "1st November 2023",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/6SnIE9gQjpWrg89HBGWIsH",
-                AppleMusic: "https://music.apple.com/gb/album/photograph-single/1716400845" title="Listen" class="folio-item__project-link2",
+                AppleMusic: "https://music.apple.com/gb/album/photograph-single/1716400845",
                 Bandcamp: "https://goodnessguild.bandcamp.com/track/photograph-3"
             }
         },
@@ -79,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             releaseDate: "2nd June 2023",
             links: {
                 Spotify: "https://open.spotify.com/track/5eVD9PnFhQVM2qaT8L5i8V",
-                AppleMusic: "https://music.apple.com/gb/album/meant-to-be-single/1691232468"",
+                AppleMusic: "https://music.apple.com/gb/album/meant-to-be-single/1691232468",
                 Bandcamp: "https://goodnessguild.bandcamp.com/track/meant-to-be"
             }
         },
@@ -89,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/loveiswhatyouwant.png",
             description: "An album of songs about love in all of its forms.",
             releaseDate: "14th February 2023",
+            releaseType: "Album",
             links: {
                 Spotify: "https://open.spotify.com/album/2hKLLWvX1ijQHvJf7reGwD",
                 AppleMusic: "https://music.apple.com/gb/album/love-is-what-you-want/1667648985",
@@ -101,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/christmassong.png",
             description: "A jolly, upbeat Christmas song",
             releaseDate: "13th November 2022",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/5tCdCuFJBn2chO0sryigVM",
                 AppleMusic: "https://music.apple.com/gb/album/another-christmas-song-single/1655038560",
@@ -117,7 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalArtist = document.getElementById("album-artist");
     const modalDescription = document.getElementById("album-description");
     const modalReleaseDate = document.getElementById("album-release-date");
-    const modalStreaming = document.getElementById("album-streaming"); // Dropdown select element
+    const modalReleaseType = document.getElementById("album-type");
+    const modalStreaming = document.getElementById("album-streaming");
 
     // Populate the album grid dynamically
     albumData.forEach((album, index) => {
@@ -133,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
             modalArtist.textContent = `by ${album.artist}`;
             modalDescription.textContent = album.description;
             modalReleaseDate.textContent = album.releaseDate;
+            modalReleaseType.textContent = album.releaseType;
 
             // Clear and populate dropdown options
             modalStreaming.innerHTML = '<option value="">Select an option...</option>';
@@ -143,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 modalStreaming.appendChild(option);
             }
 
-            modal.style.display = "flex"; // Show the modal
+            modal.style.display = "flex";
         });
 
         grid.appendChild(img);
