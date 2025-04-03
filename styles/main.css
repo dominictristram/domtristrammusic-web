@@ -328,3 +328,96 @@ footer {
 #album-artist a:hover {
     color: #ff6600;
 }
+
+/* Projects Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project Cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.project-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.project-card h2 a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-card h2 a:hover {
+    color: #ff6600;
+}
+
+.project-card p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+/* Update existing button styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 204, 0, 0.2);
+    color: #ffcc00;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 204, 0, 0.3);
+}
+
+.btn:hover {
+    background: rgba(255, 204, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .project-card {
+        margin-bottom: 1rem;
+    }
+}
