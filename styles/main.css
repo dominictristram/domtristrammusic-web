@@ -60,22 +60,69 @@ footer {
 .discography-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 35px; /* Slightly increased gap */
     padding: 20px;
     justify-items: center;
 }
 
+/* Add styles for the album container */
+.album-container {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.album-container:hover {
+    transform: scale(1.05);
+}
+
+/* Update album cover styles */
 .album-cover {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    margin-bottom: 8px;
 }
 
-.album-cover:hover {
-    transform: scale(1.1);
+/* Add styles for the title and date */
+.album-grid-title {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+/* New styles for the release type */
+.album-grid-type {
+    display: block;
+    margin: 4px 0;
+    padding: 2px 8px;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #ffcc00;
+    background: rgba(255, 204, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.album-grid-date {
+    margin: 4px 0 0 0;
+    padding: 0;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.7); /* Slightly muted white */
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* Modal styling */

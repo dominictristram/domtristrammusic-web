@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cover: "images/discography/meant_to_be.png",
             description: "A song about a love that was destined to happen.",
             releaseDate: "2nd June 2023",
+            releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/5eVD9PnFhQVM2qaT8L5i8V",
                 AppleMusic: "https://music.apple.com/gb/album/meant-to-be-single/1691232468",
@@ -130,13 +131,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Populate the album grid dynamically
     albumData.forEach((album, index) => {
+        const container = document.createElement("div");
+        container.classList.add("album-container");
+
         const img = document.createElement("img");
         img.src = album.cover;
         img.alt = album.title;
         img.classList.add("album-cover");
         img.dataset.index = index;
 
-        img.addEventListener("click", () => {
+        const titleElement = document.createElement("h3");
+        titleElement.classList.add("album-grid-title");
+        titleElement.textContent = album.title;
+
+        const typeElement = document.createElement("span");
+        typeElement.classList.add("album-grid-type");
+        typeElement.textContent = album.releaseType;
+
+        const dateElement = document.createElement("p");
+        dateElement.classList.add("album-grid-date");
+        dateElement.textContent = album.releaseDate;
+
+        container.appendChild(img);
+        container.appendChild(titleElement);
+        container.appendChild(typeElement);
+        container.appendChild(dateElement);
+
+        container.addEventListener("click", () => {
             modalCover.src = album.cover;
             modalTitle.textContent = album.title;
             
@@ -163,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "flex";
         });
 
-        grid.appendChild(img);
+        grid.appendChild(container);
     });
 
     // Close modal when clicking the close button
