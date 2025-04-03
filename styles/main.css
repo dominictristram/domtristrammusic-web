@@ -270,3 +270,14 @@ footer {
     color: #ffcc00;
     margin-left: 5px;
 }
+
+/* Add this to your existing CSS */
+#album-artist a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+#album-artist a:hover {
+    color: #ff6600;
+}

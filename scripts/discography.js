@@ -139,7 +139,14 @@ document.addEventListener("DOMContentLoaded", function () {
         img.addEventListener("click", () => {
             modalCover.src = album.cover;
             modalTitle.textContent = album.title;
-            modalArtist.textContent = `by ${album.artist}`;
+            
+            // Create artist link if it's The Goodness Guild
+            if (album.artist === "The Goodness Guild") {
+                modalArtist.innerHTML = `by <a href="https://goodnessguild.com" target="_blank">${album.artist}</a>`;
+            } else {
+                modalArtist.textContent = `by ${album.artist}`;
+            }
+            
             modalDescription.textContent = album.description;
             modalReleaseDate.textContent = album.releaseDate;
             modalReleaseType.textContent = album.releaseType;
