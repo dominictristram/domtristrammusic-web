@@ -6,6 +6,7 @@
     <title>Dom Tristram - Music</title>
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/substack.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,9 +38,14 @@
 
         <section class="news-feed">
             <h2>Latest Updates</h2>
-            <div class="substack-preview">
-                <p>Stay updated with my latest musical adventures</p>
-                <a href="https://domtristrammusic.substack.com" class="btn">Subscribe to My Substack</a>
+            <div class="substack-entries">
+                <div id="substack-posts">
+                    <!-- Posts will be dynamically loaded here -->
+                </div>
+                <div class="substack-cta">
+                    <p>Stay updated with my latest musical adventures</p>
+                    <a href="https://domtristrammusic.substack.com" class="btn" target="_blank">Subscribe to My Substack</a>
+                </div>
             </div>
         </section>
     </main>
