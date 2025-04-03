@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const albumData = [
-            {
+        {
             title: "All Is Calm",
             artist: "The Goodness Guild",
             cover: "images/discography/all_is_calm.png",
@@ -22,6 +22,89 @@ document.addEventListener("DOMContentLoaded", function () {
                 Spotify: "https://open.spotify.com/album/13Zwf0wJTFqEAD3F8kBJmA?si=Grwptda2THOkLTEWVqVA9w",
                 AppleMusic: "https://music.apple.com/gb/album/wild-women-ep/1775749944",
                 Bandcamp: "https://goodnessguild.bandcamp.com/album/wild-women-ep"
+            }
+        },
+        {
+            title: "Time Runs Backwards",
+            artist: "The Goodness Guild",
+            cover: "images/discography/time_runs_backwards.png",
+            description: "The super-wealthy have asset-stripped the country. Vote them out",
+            releaseDate: "15th March 2024",
+            links: {
+                Spotify: "https://open.spotify.com/track/0VVvTV7FqKMLgyS7YuX1aL",
+                AppleMusic: "hhttps://music.apple.com/gb/album/time-runs-backwards/1732738316",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/time-runs-backwards-2"
+            }
+        },
+        {
+            title: "Electricity",
+            artist: "The Goodness Guild",
+            cover: "images/discography/electricity.png",
+            description: "A song about love over distance",
+            releaseDate: "1st February 2024",
+            links: {
+                Spotify: "https://open.spotify.com/track/4hnJgIg3cBSqNZCmKT8r3L",
+                AppleMusic: "https://music.apple.com/gb/album/electricity-single/1726056868"
+            }
+        },
+        {
+            title: "The Best Advice Ever Given To Me",
+            artist: "The Goodness Guild",
+            cover: "images/discography/thebestadvice.png",
+            description: "An upbeat song about deciding to make a change to the world.",
+            releaseDate: "1st February 2024",
+            links: {
+                Spotify: "https://open.spotify.com/track/6KRa8AfEEkf5zH6ELD207q",
+                AppleMusic: "https://music.apple.com/gb/album/the-best-advice-ever-given-to-me-single/1719874906",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/the-best-advice-ever-given-to-me-3"
+            }
+        },
+        {
+            title: "Photograph",
+            artist: "The Goodness Guild",
+            cover: "images/discography/photograph.png",
+            description: "A song about remembering a person of whom the physical evidence of existence is being slowly but inevitably lost.",
+            releaseDate: "1st November 2023",
+            links: {
+                Spotify: "https://open.spotify.com/track/6SnIE9gQjpWrg89HBGWIsH",
+                AppleMusic: "https://music.apple.com/gb/album/photograph-single/1716400845" title="Listen" class="folio-item__project-link2",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/photograph-3"
+            }
+        },
+        {
+            title: "Meant To Be",
+            artist: "The Goodness Guild",
+            cover: "images/discography/meant_to_be.png",
+            description: "A song about a love that was destined to happen.",
+            releaseDate: "2nd June 2023",
+            links: {
+                Spotify: "https://open.spotify.com/track/5eVD9PnFhQVM2qaT8L5i8V",
+                AppleMusic: "https://music.apple.com/gb/album/meant-to-be-single/1691232468"",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/meant-to-be"
+            }
+        },
+        {
+            title: "Love Is What You Want",
+            artist: "The Goodness Guild",
+            cover: "images/discography/loveiswhatyouwant.png",
+            description: "An album of songs about love in all of its forms.",
+            releaseDate: "14th February 2023",
+            links: {
+                Spotify: "https://open.spotify.com/album/2hKLLWvX1ijQHvJf7reGwD",
+                AppleMusic: "https://music.apple.com/gb/album/love-is-what-you-want/1667648985",
+                Bandcamp: "https://goodnessguild.bandcamp.com/album/love-is-what-you-want"
+            }
+        },
+        {
+            title: "Another Christmas Song",
+            artist: "The Goodness Guild",
+            cover: "images/discography/christmassong.png",
+            description: "A jolly, upbeat Christmas song",
+            releaseDate: "13th November 2022",
+            links: {
+                Spotify: "https://open.spotify.com/track/5tCdCuFJBn2chO0sryigVM",
+                AppleMusic: "https://music.apple.com/gb/album/another-christmas-song-single/1655038560",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/another-christmas-song"
             }
         }
     ];
