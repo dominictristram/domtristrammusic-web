@@ -549,3 +549,85 @@ footer {
 .substack-cta p {
     margin-bottom: 1rem;
 }
+
+/* Social Media Grid */
+.socials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Social Media Cards */
+.social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 204, 0, 0.3);
+}
+
+.social-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+
+.social-card:hover i {
+    color: #ff6600;
+}
+
+.platform-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.username {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .socials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .social-card {
+        padding: 1.5rem;
+    }
+
+    .social-card i {
+        font-size: 2rem;
+    }
+}
+
+/* Add these styles for the Bluesky icon */
+.bluesky-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    fill: #ffcc00; /* Using your site's gold color to match other icons */
+    transition: fill 0.3s ease;
+}
+
+.social-card:hover .bluesky-icon {
+    fill: #ff6600; /* Your hover color */
+}
