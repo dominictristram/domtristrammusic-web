@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const albumData = [
         {
+            title: "Motosierra",
+            artist: "The Goodness Guild",
+            cover: "images/discography/motosierra.png",
+            description: "A song about Javier Milei, Argentina's populist president.",
+            releaseDate: "23rd June 2025",
+            releaseType: "Single",
+            links: {
+                Spotify: "",
+                AppleMusic: "",
+                Bandcamp: ""
+            }
+        },
+        {
             title: "All Is Calm",
             artist: "The Goodness Guild",
             cover: "images/discography/all_is_calm.png",
