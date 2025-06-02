@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             artist: "The Goodness Guild",
             cover: "images/discography/thebestadvice.png",
             description: "An upbeat song about deciding to make a change to the world.",
-            releaseDate: "1st February 2024",
+            releaseDate: "1st January 2024",
             releaseType: "Single",
             links: {
                 Spotify: "https://open.spotify.com/track/6KRa8AfEEkf5zH6ELD207q",
