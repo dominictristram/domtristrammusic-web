@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Latest Release Card
     const latestRelease = {
-        title: "All Is Calm",
+        title: "Motosierra",
         artist: "The Goodness Guild",
-        cover: "images/discography/all_is_calm.png",
-        releaseDate: "1st December 2024"
+        cover: "images/discography/motosierra.png",
+        releaseDate: "23rd June 2025"
     };
 
     const releaseCard = document.querySelector('.release-card');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <img src="${latestRelease.cover}" alt="${latestRelease.title}" style="width: 200px; border-radius: 10px;">
             <h3>${latestRelease.title}</h3>
             <p>${latestRelease.artist}</p>
-            <p>Released: ${latestRelease.releaseDate}</p>
+            <p>Release Date: ${latestRelease.releaseDate}</p>
             <a href="discography.html" class="btn">Learn More</a>
         `;
     }

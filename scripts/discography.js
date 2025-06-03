@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             links: {
                 Spotify: "",
                 AppleMusic: "",
-                Bandcamp: ""
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/motosierra"
             }
         },
         {
