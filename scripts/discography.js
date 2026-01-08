@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const albumData = [
         {
+            title: "Christmas 1924",
+            artist: "The Goodness Guild",
+            cover: "images/discography/christmas1924.png",
+            description: "A song about how, while we might wish for peace at Christmas, we're still waiting for it.",
+            releaseDate: "1st December 2025",
+            releaseType: "Single",
+            links: {
+                Spotify: "https://open.spotify.com/track/7EpaUtdmVyb5VHGIa1MheX?si=95aaedc45c5348ba",
+                AppleMusic: "https://music.apple.com/gb/album/christmas-1924-single/1853745435",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/christmas-1924"
+            }
+        },
+        {
             title: "Motosierra",
             artist: "The Goodness Guild",
             cover: "images/discography/motosierra.png",
@@ -8,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             releaseDate: "23rd June 2025",
             releaseType: "Single",
             links: {
-                Spotify: "",
-                AppleMusic: "",
+                Spotify: "https://open.spotify.com/track/79yO6bztv4aud3ABuWwiKd?si=8918ace5d4fd4dd9",
+                AppleMusic: "https://music.apple.com/gb/album/motosierra-single/1820762894",
                 Bandcamp: "https://goodnessguild.bandcamp.com/track/motosierra"
             }
         },
