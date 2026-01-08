@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Latest Release Card
     const latestRelease = {
-        title: "Motosierra",
+        title: "Christmas 1924",
         artist: "The Goodness Guild",
-        cover: "images/discography/motosierra.png",
-        releaseDate: "23rd June 2025"
+        cover: "images/discography/christmas1924.png",
+        releaseDate: "1st December 2025"
     };
 
     const releaseCard = document.querySelector('.release-card');
