@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const albumData = [
         {
+            title: "El Salvador",
+            artist: "The Goodness Guild",
+            cover: "images/discography/el_salvador.jpg",
+            description: "A song about how anti-immigrant rhetoric can be overcome by love.",
+            releaseDate: "1st March 2026",
+            releaseType: "Single",
+            links: {
+                Spotify: "https://open.spotify.com/album/57hf9NvvJDhBbedcIL94KK",
+                AppleMusic: "https://music.apple.com/gb/album/el-salvador/1876082710",
+                Bandcamp: "https://goodnessguild.bandcamp.com/track/el-salvador"
+            }
+        },
+        {
             title: "Christmas 1924",
             artist: "The Goodness Guild",
             cover: "images/discography/christmas1924.png",
